@@ -14,7 +14,7 @@ cp paperboy.nes ../$ROM
 cd ..
 
 echo "Updating CHR..."
-#...
+dd if=chr/alphabet.bin of="$ROM" conv=notrunc bs=1 seek=$((0x9220))
 
 echo "Generating patch..."
 $FLIPS -c -i "$ORIG" "$ROM" "$IPS"
