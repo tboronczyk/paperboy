@@ -1816,19 +1816,16 @@ __8cb9:     jsr __8505         ; $8cb9: 20 05 85
 
 ;-------------------------------------------------------------------------------
             jsr __a4ed         ; $8cda: 20 ed a4  
-            jsr __8505         ; $8cdd: 20 05 85  
 
-;-------------------------------------------------------------------------------
-            .hex 03 08 50 41   ; $8ce0: 03 08 50 41   Data
-            .hex 50 45 52 42   ; $8ce4: 50 45 52 42   Data
-            .hex 4f 59 20 52   ; $8ce8: 4f 59 20 52   Data
-            .hex 45 54 49 52   ; $8cec: 45 54 49 52   Data
-            .hex 45 53 20 49   ; $8cf0: 45 53 20 49   Data
-            .hex 4e 20 47 4c   ; $8cf4: 4e 20 47 4c   Data
+            jsr __8505         ; $8cdd: 20 05 85  
+            ;           G  A  Z  E  T  -  L  I  V  E  R  I  S  T  O
+            .hex 09 07 48 41 5c 46 58 2d 50 4c 5b 46 55 4c 56 58 53 00
+            jmp RetiresTextOverflow
+            .hex 20 47 4c      ; $8cf5: 20 47 4c      Data
             .hex 4f 52 59 21   ; $8cf8: 4f 52 59 21   Data
             .hex 00            ; $8cfc: 00            Data
+RetiresTextEnd:
 
-;-------------------------------------------------------------------------------
 __8cfd:     jsr __825c         ; $8cfd: 20 5c 82  
             lda #$ff           ; $8d00: a9 ff     
             jsr __8722         ; $8d02: 20 22 87  
@@ -11170,6 +11167,12 @@ PlayerTwoText2:
             ;           L  U  D  A  N  T  O     2
             .hex 02 04 50 59 45 41 52 58 53 20 32 00
             jmp PlayerTwoText2End
+
+RetiresTextOverflow:
+            jsr __8505
+            ;           E  M  E  R  I  T  I GX  I  S     K  U  N     H  O  N  O  R  O  J  !
+            .hex 05 08 46 51 46 55 4c 58 4c 49 4c 56 20 4f 59 52 20 4a 53 52 53 55 53 4d 21 00
+            jmp RetiresTextEnd
 
             .pad $fffa
 
