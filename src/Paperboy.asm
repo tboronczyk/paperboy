@@ -4977,32 +4977,50 @@ __a40a:     lda $af            ; $a40a: a5 af
             tay                ; $a40d: a8        
             lda __a41b,y       ; $a40e: b9 1b a4  
             pha                ; $a411: 48        
-            lda __a41c,y       ; $a412: b9 1c a4  
+            lda __a41b+1,y     ; $a412: b9 1c a4  
             tay                ; $a415: a8        
             pla                ; $a416: 68        
             jsr __852a         ; $a417: 20 2a 85  
             rts                ; $a41a: 60        
 
 ;-------------------------------------------------------------------------------
-__a41b:     .hex 29            ; $a41b: 29            Data
-__a41c:     .hex a4 30 a4 38   ; $a41c: a4 30 a4 38   Data
-            .hex a4 42 a4 4b   ; $a420: a4 42 a4 4b   Data
-            .hex a4 52 a4 5b   ; $a424: a4 52 a4 5b   Data
-            .hex a4 4d 4f 4e   ; $a428: a4 4d 4f 4e   Data
-            .hex 44 41 59 00   ; $a42c: 44 41 59 00   Data
-            .hex 54 55 45 53   ; $a430: 54 55 45 53   Data
-            .hex 44 41 59 00   ; $a434: 44 41 59 00   Data
-            .hex 57 45 44 4e   ; $a438: 57 45 44 4e   Data
-            .hex 45 53 44 41   ; $a43c: 45 53 44 41   Data
-            .hex 59 00 54 48   ; $a440: 59 00 54 48   Data
-            .hex 55 52 53 44   ; $a444: 55 52 53 44   Data
-            .hex 41 59 00 46   ; $a448: 41 59 00 46   Data
-            .hex 52 49 44 41   ; $a44c: 52 49 44 41   Data
-            .hex 59 00 53 41   ; $a450: 59 00 53 41   Data
-            .hex 54 55 52 44   ; $a454: 54 55 52 44   Data
-            .hex 41 59 00 53   ; $a458: 41 59 00 53   Data
-            .hex 55 4e 44 41   ; $a45c: 55 4e 44 41   Data
-            .hex 59 00         ; $a460: 59 00         Data
+__a41b:     .db <Tagoj_Lundo, >Tagoj_Lundo
+            .db <Tagoj_Mardo, >Tagoj_Mardo
+            .db <Tagoj_Merkredo, >Tagoj_Merkredo
+            .db <Tagoj_Jxauxdo, >Tagoj_Jxauxdo
+            .db <Tagoj_Vendredo, >Tagoj_Vendredo
+            .db <Tagoj_Sabato, >Tagoj_Sabato
+            .db <Tagoj_Dimancxo, >Tagoj_Dimancxo
+
+Tagoj_Lundo:
+            ;        L  U  N  D  O
+            .hex 20 50 59 52 45 53 00
+
+Tagoj_Mardo:
+            ;        M  A  R  D  O
+            .hex 20 51 41 55 45 53 00
+
+Tagoj_Merkredo:
+            ;     M  E  R  K  R  E  D  O
+            .hex 51 46 55 4f 55 46 45 53 00
+
+Tagoj_Jxauxdo:
+            ;       JX  A UX  D  O
+            .hex 20 4e 41 5a 45 53 00
+
+Tagoj_Vendredo:
+            ;     V  E  N  D  R  E  D  O
+            .hex 5b 46 52 45 55 46 45 53 00
+
+Tagoj_Sabato:
+            ;        S  A  B  A  T  O
+            .hex 20 56 41 42 41 58 53 00
+
+Tagoj_Dimancxo:
+            ;     D  I  M  A  N CX  O
+            .hex 45 4c 51 41 52 44 53 00
+
+            .pad $a462 ; 2 bytes free
 
 ;-------------------------------------------------------------------------------
 __a462:     ldy $b8            ; $a462: a4 b8     
