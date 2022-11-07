@@ -7725,44 +7725,40 @@ __c737:     .hex 68 02 02 00   ; $c737: 68 02 02 00   Data
             .hex 12 82 13 14   ; $c96b: 12 82 13 14   Data
             .hex 06 15 0d 00   ; $c96f: 06 15 0d 00   Data
             .hex 14 3e 00 3e   ; $c973: 14 3e 00 3e   Data
-            .hex 00 28 00 92   ; $c977: 00 28 00 92   Data
-            .hex 10 51 5b 10   ; $c97b: 10 51 5b 10   Data
-            .hex 51 43 10 51   ; $c97f: 51 43 10 51   Data
-            .hex 43 3f 4c 4d   ; $c983: 43 3f 4c 4d   Data
-            .hex 5c 5d 43 10   ; $c987: 5c 5d 43 10   Data
-            .hex 51 5e 04 00   ; $c98b: 51 5e 04 00   Data
-            .hex 28 00 92 3f   ; $c98f: 28 00 92 3f   Data
-            .hex 4c 00 3f 40   ; $c993: 4c 00 3f 40   Data
-            .hex 43 3f 40 43   ; $c997: 43 3f 40 43   Data
-            .hex 45 46 47 55   ; $c99b: 45 46 47 55   Data
-            .hex 56 57 58 59   ; $c99f: 56 57 58 59   Data
-            .hex 5a 04 00 28   ; $c9a3: 5a 04 00 28   Data
-            .hex 00 92 3f 19   ; $c9a7: 00 92 3f 19   Data
-            .hex 44 3f 3d 11   ; $c9ab: 44 3f 3d 11   Data
-            .hex 3f 40 43 3f   ; $c9af: 3f 40 43 3f   Data
-            .hex 3a 3e 3f 19   ; $c9b3: 3a 3e 3f 19   Data
-            .hex 44 54 19 44   ; $c9b7: 44 54 19 44   Data
+            .hex 00 28 00      ; $c977: 00 28 00      Data
+
+            ; COURSE - BOTTOM
+            .hex 92 10 51 5b 10 51 43 10 51 43 3f 4c 4d 5c 5d 43 10 51 5e
+
+            .hex 04 00         ; $c98d: 04 00         Data
+            .hex 28 00         ; $c98f: 28 00         Data
+
+            ; COURSE - MIDDLE
+            .hex 92 3f 4c 00 3f 40 43 3f 40 43 45 46 47 55 56 57 58 59 5a
+
+            .hex 04 00 28      ; $c9a4: 04 00 28      Data
+            .hex 00            ; $c9a7: 00            Data
+
+            ; COURSE - TOP
+            .hex 92 3f 19 44 3f 3d 11 3f 40 43 3f 3a 3e 3f 19 44 54 19 44
+
             .hex 04 00 3e 00   ; $c9bb: 04 00 3e 00   Data
-            .hex 27 00 97 42   ; $c9bf: 27 00 97 42   Data
-            .hex 43 00 3f 4c   ; $c9c3: 43 00 3f 4c   Data
-            .hex 4d 3f 40 43   ; $c9c7: 4d 3f 40 43   Data
-            .hex 3f 40 43 4e   ; $c9cb: 3f 40 43 4e   Data
-            .hex 4f 3f 40 43   ; $c9cf: 4f 3f 40 43   Data
-            .hex 4e 50 10 51   ; $c9d3: 4e 50 10 51   Data
-            .hex 52 53 27 00   ; $c9d7: 52 53 27 00   Data
-            .hex 97 42 43 00   ; $c9db: 97 42 43 00   Data
-            .hex 45 46 47 45   ; $c9df: 45 46 47 45   Data
-            .hex 48 49 3f 40   ; $c9e3: 48 49 3f 40   Data
-            .hex 43 4a 43 3f   ; $c9e7: 43 4a 43 3f   Data
-            .hex 40 43 4a 43   ; $c9eb: 40 43 4a 43   Data
-            .hex 3f 4b 22 00   ; $c9ef: 3f 4b 22 00   Data
-            .hex 26 00 98 39   ; $c9f3: 26 00 98 39   Data
-            .hex 3a 3b 19 3c   ; $c9f7: 3a 3b 19 3c   Data
-            .hex 3d 3e 3f 3a   ; $c9fb: 3d 3e 3f 3a   Data
-            .hex 11 3f 40 41   ; $c9ff: 11 3f 40 41   Data
-            .hex 42 43 3f 40   ; $ca03: 42 43 3f 40   Data
-            .hex 41 42 43 3f   ; $ca07: 41 42 43 3f   Data
-            .hex 19 44 00 2c   ; $ca0b: 19 44 00 2c   Data
+            .hex 27 00         ; $c9bf: 27 00         Data
+
+            ; TRAINING - BOTTOM
+            .hex 97 42 43 00 3f 4c 4d 3f 40 43 3f 40 43 4e 4f 3f 40 43 4e 50 10 51 52 53
+
+            .hex 27 00         ; $c9d9: 27 00         Data
+
+            ; TRAINING - MIDDLE
+            .hex 97 42 43 00 45 46 47 45 48 49 3f 40 43 4a 43 3f 40 43 4a 43 3f 4b 22 00
+
+            .hex 26 00         ; $c9f3: 26 00         Data
+
+            ; TRAINING - TOP
+            .hex 98 39 3a 3b 19 3c 3d 3e 3f 3a 11 3f 40 41 42 43 3f 40 41 42 43 3f 19 44 00
+
+            .hex 2c            ; $ca0e: 2c            Data
             .hex 00 82 37 38   ; $ca0f: 00 82 37 38   Data
             .hex 04 00 82 37   ; $ca13: 04 00 82 37   Data
             .hex 38 0a 00 2c   ; $ca17: 38 0a 00 2c   Data
@@ -7813,16 +7809,18 @@ __c737:     .hex 68 02 02 00   ; $c737: 68 02 02 00   Data
             .hex 01 81 1c 0b   ; $cacb: 01 81 1c 0b   Data
             .hex 00 81 24 08   ; $cacf: 00 81 24 08   Data
             .hex 01 81 00 81   ; $cad3: 01 81 00 81   Data
-            .hex 01 27 1b 8e   ; $cad7: 01 27 1b 8e   Data
-            .hex 1c 1d 25 26   ; $cadb: 1c 1d 25 26   Data
-            .hex 27 28 29 2a   ; $cadf: 27 28 29 2a   Data
-            .hex 2b 2c 27 2d   ; $cae3: 2b 2c 27 2d   Data
-            .hex 24 01 07 1b   ; $cae7: 24 01 07 1b   Data
+            .hex 01 27 1b      ; $cad7: 01 27 1b      Data
+
+            ; START - BOTTOM
+            .hex 8e 1c 1d 25 26 27 28 29 2a 2b 2c 27 2d 24 01
+
+            .hex 07 1b         ; $cae9: 07 1b         Data
             .hex 81 00 27 1b   ; $caeb: 81 00 27 1b   Data
-            .hex 8e 01 1c 1d   ; $caef: 8e 01 1c 1d   Data
-            .hex 1e 1f 20 21   ; $caf3: 1e 1f 20 21   Data
-            .hex 22 1f 23 1f   ; $caf7: 22 1f 23 1f   Data
-            .hex 20 00 24 07   ; $cafb: 20 00 24 07   Data
+
+            ; START - TOP
+            .hex 8e 01 1c 1d 1e 1f 20 21 22 1f 23 1f 20 00 24
+
+            .hex 07            ; $cafe: 07            Data
             .hex 1b 82 01 00   ; $caff: 1b 82 01 00   Data
             .hex 28 01 81 18   ; $cb03: 28 01 81 18   Data
             .hex 0b 19 81 1a   ; $cb07: 0b 19 81 1a   Data
@@ -7835,31 +7833,32 @@ __c737:     .hex 68 02 02 00   ; $c737: 68 02 02 00   Data
             .hex 81 78 16 79   ; $cb23: 81 78 16 79   Data
             .hex 84 7a 79 7b   ; $cb27: 84 7a 79 7b   Data
             .hex 7e 02 01 81   ; $cb2b: 7e 02 01 81   Data
-            .hex 1c 06 00 90   ; $cb2f: 1c 06 00 90   Data
-            .hex 3f 4c 00 3f   ; $cb33: 3f 4c 00 3f   Data
-            .hex 40 43 4e 4f   ; $cb37: 40 43 4e 4f   Data
-            .hex 3f 4c 5c 5d   ; $cb3b: 3f 4c 5c 5d   Data
-            .hex 43 3f 40 43   ; $cb3f: 43 3f 40 43   Data
+            .hex 1c 06 00      ; $cb2f: 1c 06 00      Data
+
+            ; FINISH - BOTTOM
+            .hex 90 3f 4c 00 3f 40 43 4e 4f 3f 4c 5c 5d 43 3f 40 43
+
             .hex 07 00 02 01   ; $cb43: 07 00 02 01   Data
             .hex 84 75 71 69   ; $cb47: 84 75 71 69   Data
             .hex 6a 11 6b 81   ; $cb4b: 6a 11 6b 81   Data
             .hex 6c 02 69 84   ; $cb4f: 6c 02 69 84   Data
             .hex 72 76 77 7d   ; $cb53: 72 76 77 7d   Data
             .hex 02 01 81 1c   ; $cb57: 02 01 81 1c   Data
-            .hex 06 00 90 58   ; $cb5b: 06 00 90 58   Data
-            .hex 59 5a 3f 40   ; $cb5f: 59 5a 3f 40   Data
-            .hex 43 4a 43 3f   ; $cb63: 43 4a 43 3f   Data
-            .hex 4c 55 56 57   ; $cb67: 4c 55 56 57   Data
-            .hex 45 48 49 07   ; $cb6b: 45 48 49 07   Data
+            .hex 06 00         ; $cb5b: 06 00         Data
+
+            ; FINISH - MIDDLE
+            .hex 90 58 59 5a 3f 40 43 4a 43 3f 4c 55 56 57 45 48 49
+
+            .hex 07            ; $cb6e: 07            Data
             .hex 00 83 01 64   ; $cb6f: 00 83 01 64   Data
             .hex 6f 16 00 85   ; $cb73: 6f 16 00 85   Data
             .hex 70 65 66 2e   ; $cb77: 70 65 66 2e   Data
             .hex 7d 02 01 81   ; $cb7b: 7d 02 01 81   Data
-            .hex 1c 06 00 90   ; $cb7f: 1c 06 00 90   Data
-            .hex 54 19 44 3f   ; $cb83: 54 19 44 3f   Data
-            .hex 40 41 42 43   ; $cb87: 40 41 42 43   Data
-            .hex 3f 4c 3f 19   ; $cb8b: 3f 4c 3f 19   Data
-            .hex 44 3f 40 43   ; $cb8f: 44 3f 40 43   Data
+            .hex 1c 06 00      ; $cb7f: 1c 06 00      Data
+
+            ; FINISH - TOP
+            .hex 90 54 19 44 3f 40 41 42 43 3f 4c 3f 19 44 3f 40 43
+
             .hex 07 00 85 61   ; $cb93: 07 00 85 61   Data
             .hex 67 71 69 6a   ; $cb97: 67 71 69 6a   Data
             .hex 11 6b 81 6c   ; $cb9b: 11 6b 81 6c   Data
