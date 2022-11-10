@@ -24,6 +24,8 @@ Here are some pretty screenshots:
 
 ![Delivering papers](images/image-3.png)
 
-![Perfect delivery](images/image-4.png)
+![Training course](images/image-4.png)
 
-![Top 10](images/image-5.png)
+![Perfect delivery](images/image-5.png)
+
+![Top 10](images/image-6.png)
