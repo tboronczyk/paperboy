@@ -1,5 +1,5 @@
 Paperboy (NES)
-Traduko al Esperanto v1.0
+Traduko al Esperanto v1.0 (14/10/2022)
 
 ENKONDUKO
 ---------
@@ -33,7 +33,7 @@ CRC32: EB171D77
 
 HISTORIO
 --------
-v1.0
+v1.0    14/11/2022
  - Unua eldono
 
 KONTRIBUANTOJ
