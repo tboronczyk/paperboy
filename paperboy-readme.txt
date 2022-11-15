@@ -11,7 +11,16 @@ retpaĝo por la projekto estas
 
 PRISKRIBO DE LUDO
 -----------------
-...
+Finfine, la klasikaĵo en via hejmo! Eksaltu sur la
+biciklon kaj pedalu tra la frenezaj stratoj de ĉi tiu
+malkutima antaŭurbo. Kuraĝe liveru gazetojn por gajni
+famon kaj riĉaĵojn! Evitu motorciklojn, triciklojn,
+trafikon, hundojn, rompdancantojn, malamikojn, kaj la
+aliajn danĝeraĵojn dum vi liveras al viaj abonantoj.
+Poste, gajnu poentojn en la trejnejo ĉe la fino de la
+itinero. Kun superaj animacio kaj sonefektoj, Paperboy
+(gazet-liveristo) liveras la konkurencon kaj eksciton,
+kiujn vi sopiras de la arkada videoludejo.
 
 INFORMOJ PRI ROM
 ----------------
