@@ -7818,7 +7818,7 @@ __c737:     .hex 68 02 02 00   ; $c737: 68 02 02 00   Data
             .hex 81 00 27 1b   ; $caeb: 81 00 27 1b   Data
 
             ; START - TOP
-            .hex 8e 01 1c 2d 1e 1f 20 21 22 23 1f 1f 2d 00 24
+            .hex 8e 01 1c 2d 1e 1f 20 21 22 23 1f 57 2d 00 24
 
             .hex 07            ; $cafe: 07            Data
             .hex 1b 82 01 00   ; $caff: 1b 82 01 00   Data
